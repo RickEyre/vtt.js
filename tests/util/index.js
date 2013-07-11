@@ -43,12 +43,11 @@ function parseStreaming(filename, assertions) {
 
     p.parse(vtt.substr(0, n));
     p.parse(vtt.substr(n));
-    p.flush();
-
-    tape(filename + " - streaming (n=" + n + ")", function(t) {
-      assertions(result, t);
-    });
   }
+  p.flush();
+  tape(filename + " - streaming (n=" + n + ")", function(t) {
+    assertions(result, t);
+  });
 }
 
 module.exports = {
