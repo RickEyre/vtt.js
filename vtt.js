@@ -194,6 +194,14 @@ const NEEDS_PARENT = {
   rt: "ruby"
 };
 
+const TAGS_CSS = {
+  b: "font-weight: bold",
+  u: "text-decoration: underline",
+  i: "font-style: italic",
+  ruby: "display: ruby",
+  rt: "display: ruby-text"
+};
+
 // Parse content into a document fragment.
 function parseContent(window, input) {
   function nextToken() {
@@ -239,6 +247,9 @@ function parseContent(window, input) {
     var name = TAG_ANNOTATION[type];
     if (name && annotation)
       element[name] = annotation.trim();
+    var css = TAGS_CSS[type];
+    if (css)
+      element.setAttribute("style", css);
     return element;
   }
 

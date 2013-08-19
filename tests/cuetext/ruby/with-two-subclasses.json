@@ -20,6 +20,7 @@
           {
             "tagName": "ruby",
             "localName": "ruby",
+            "style": "display: ruby",
             "className": "first loud",
             "childNodes": [
               {
@@ -28,6 +29,7 @@
               {
                 "tagName": "rt",
                 "localName": "rt",
+                "style": "display: ruby-text",
                 "className": "first loud",
                 "childNodes": [
                   {

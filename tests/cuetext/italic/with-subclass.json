@@ -20,6 +20,7 @@
           {
             "tagName": "i",
             "localName": "i",
+            "style": "font-style: italic",
             "className": "first",
             "childNodes": [
               {

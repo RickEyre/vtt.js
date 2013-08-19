@@ -52,6 +52,7 @@
           {
             "tagName": "i",
             "localName": "i",
+            "style" : "font-style: italic",
             "childNodes": [
               {
                 "textContent": " stuff > &l<&rl\u200f\u200e "

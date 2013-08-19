@@ -20,6 +20,7 @@
           {
             "tagName": "b",
             "localName": "b",
+            "style": "font-weight: bold",
             "childNodes": [
               {
                 "textContent": "It's a blue apple tree!"

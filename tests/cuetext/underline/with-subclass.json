@@ -20,6 +20,7 @@
           {
             "tagName": "u",
             "localName": "u",
+            "style": "text-decoration: underline",
             "className": "first",
             "childNodes": [
               {

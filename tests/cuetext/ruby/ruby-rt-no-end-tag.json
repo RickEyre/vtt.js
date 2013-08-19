@@ -20,6 +20,7 @@
           {
             "tagName": "ruby",
             "localName": "ruby",
+            "style": "display: ruby",
             "childNodes": [
               {
                 "textContent": "That's "
@@ -27,6 +28,7 @@
               {
                 "tagName": "rt",
                 "localName": "rt",
+                "style": "display: ruby-text",
                 "childNodes": [
                   {
                     "textContent": "awesome!"
