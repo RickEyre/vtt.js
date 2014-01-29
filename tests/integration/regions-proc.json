@@ -1,1 +1,188 @@
-[]
+[
+  {
+    "childNodes": [
+      {
+        "childNodes": [],
+        "data": "Hi, my name is Fred",
+        "localName": "",
+        "textContent": "Hi, my name is Fred"
+      }
+    ],
+    "className": "",
+    "lang": "",
+    "localName": "div",
+    "style": {
+      "background-color": "rgba(0, 0, 0, 0.796875)",
+      "bottom": "150px",
+      "color": "rgb(255, 255, 255)",
+      "direction": "ltr",
+      "font": "normal normal normal 7.5px/normal sans-serif",
+      "height": "8px",
+      "left": "0px",
+      "position": "absolute",
+      "right": "0px",
+      "text-align": "left",
+      "top": "-8px",
+      "white-space": "pre-line",
+      "width": "300px"
+    },
+    "tagName": "DIV",
+    "textContent": "Hi, my name is Fred",
+    "title": ""
+  },
+  {
+    "childNodes": [
+      {
+        "childNodes": [],
+        "data": "Hi, I'm Bill",
+        "localName": "",
+        "textContent": "Hi, I'm Bill"
+      }
+    ],
+    "className": "",
+    "lang": "",
+    "localName": "div",
+    "style": {
+      "background-color": "rgba(0, 0, 0, 0.796875)",
+      "bottom": "150px",
+      "color": "rgb(255, 255, 255)",
+      "direction": "ltr",
+      "font": "normal normal normal 7.5px/normal sans-serif",
+      "height": "8px",
+      "left": "0px",
+      "position": "absolute",
+      "right": "0px",
+      "text-align": "right",
+      "top": "-8px",
+      "white-space": "pre-line",
+      "width": "300px"
+    },
+    "tagName": "DIV",
+    "textContent": "Hi, I'm Bill",
+    "title": ""
+  },
+  {
+    "childNodes": [
+      {
+        "childNodes": [],
+        "data": "Would you like to get a coffee?",
+        "localName": "",
+        "textContent": "Would you like to get a coffee?"
+      }
+    ],
+    "className": "",
+    "lang": "",
+    "localName": "div",
+    "style": {
+      "background-color": "rgba(0, 0, 0, 0.796875)",
+      "bottom": "150px",
+      "color": "rgb(255, 255, 255)",
+      "direction": "ltr",
+      "font": "normal normal normal 7.5px/normal sans-serif",
+      "height": "8px",
+      "left": "0px",
+      "position": "absolute",
+      "right": "0px",
+      "text-align": "left",
+      "top": "-8px",
+      "white-space": "pre-line",
+      "width": "300px"
+    },
+    "tagName": "DIV",
+    "textContent": "Would you like to get a coffee?",
+    "title": ""
+  },
+  {
+    "childNodes": [
+      {
+        "childNodes": [],
+        "data": "Sure! I've only had one today.",
+        "localName": "",
+        "textContent": "Sure! I've only had one today."
+      }
+    ],
+    "className": "",
+    "lang": "",
+    "localName": "div",
+    "style": {
+      "background-color": "rgba(0, 0, 0, 0.796875)",
+      "bottom": "150px",
+      "color": "rgb(255, 255, 255)",
+      "direction": "ltr",
+      "font": "normal normal normal 7.5px/normal sans-serif",
+      "height": "8px",
+      "left": "0px",
+      "position": "absolute",
+      "right": "0px",
+      "text-align": "right",
+      "top": "-8px",
+      "white-space": "pre-line",
+      "width": "300px"
+    },
+    "tagName": "DIV",
+    "textContent": "Sure! I've only had one today.",
+    "title": ""
+  },
+  {
+    "childNodes": [
+      {
+        "childNodes": [],
+        "data": "This is my fourth!",
+        "localName": "",
+        "textContent": "This is my fourth!"
+      }
+    ],
+    "className": "",
+    "lang": "",
+    "localName": "div",
+    "style": {
+      "background-color": "rgba(0, 0, 0, 0.796875)",
+      "bottom": "150px",
+      "color": "rgb(255, 255, 255)",
+      "direction": "ltr",
+      "font": "normal normal normal 7.5px/normal sans-serif",
+      "height": "8px",
+      "left": "0px",
+      "position": "absolute",
+      "right": "0px",
+      "text-align": "left",
+      "top": "-8px",
+      "white-space": "pre-line",
+      "width": "300px"
+    },
+    "tagName": "DIV",
+    "textContent": "This is my fourth!",
+    "title": ""
+  },
+  {
+    "childNodes": [
+      {
+        "childNodes": [],
+        "data": "OK, let's go.",
+        "localName": "",
+        "textContent": "OK, let's go."
+      }
+    ],
+    "className": "",
+    "lang": "",
+    "localName": "div",
+    "style": {
+      "background-color": "rgba(0, 0, 0, 0.796875)",
+      "bottom": "150px",
+      "color": "rgb(255, 255, 255)",
+      "direction": "ltr",
+      "font": "normal normal normal 7.5px/normal sans-serif",
+      "height": "8px",
+      "left": "0px",
+      "position": "absolute",
+      "right": "0px",
+      "text-align": "left",
+      "top": "-8px",
+      "white-space": "pre-line",
+      "width": "300px"
+    },
+    "tagName": "DIV",
+    "textContent": "OK, let's go.",
+    "title": ""
+  }
+]
