@@ -735,8 +735,8 @@
     // Calculate the distance from the reference edge of the viewport to the line
     // position of the cue box. The reference edge will be resolved later when
     // the box orientation styles are applied. Default if snapToLines is not set
-    // is 85.
-    var linePos = 85;
+    // is 0 (top line of the video).
+    var linePos = 0;
     if (!cue.snapToLines) {
       var computedLinePos = computeLinePos(cue),
           boxComputedStyle = window.getComputedStyle(cueBox.div),
