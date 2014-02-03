@@ -882,11 +882,12 @@
     }
 
     var boxPosition = new BoxPosition(styleBox),
-        cue = styleBox.cue;
+        cue = styleBox.cue,
+        linePos = computeLinePos(cue),
+        axis = [];
 
     // If we have a line number to align the cue to.
     if (cue.snapToLines) {
-      var axis = [];
       switch (cue.vertical) {
       case "":
         axis = [ "+y", "-y" ];
@@ -901,30 +902,23 @@
 
       // Move the box to the specified position. This may not be its best
       // position.
-      boxPosition.move(axis[0], lineHeight * Math.floor(computeLinePos(cue) + 0.5));
-
-      var bestPos = findBestPosition(boxPosition, axis);
-      styleBox.move(bestPos.toCSSCompatValues(containerBox));
+      boxPosition.move(axis[0], lineHeight * Math.floor(linePos + 0.5));
 
     // If we have a percentage line value for the cue.
     } else {
-      var computedLinePos = computeLinePos(cue),
-          size = cue.vertical === "" ? boxPosition.height : boxPosition.width,
+      var size = cue.vertical === "" ? boxPosition.height : boxPosition.width,
           calculatedPercentage = (size / containerBox.height) * 100;
 
-      var linePos = 0;
       switch (cue.lineAlign) {
-      case "start":
-        linePos = computedLinePos;
-        break;
       case "middle":
-        linePos = computedLinePos - (calculatedPercentage / 2);
+        linePos -= (calculatedPercentage / 2);
         break;
       case "end":
-        linePos = computedLinePos - calculatedPercentage;
+        linePos -= calculatedPercentage;
         break;
       }
 
+      // Apply initial line position to the cue box.
       switch (cue.vertical) {
       case "":
         styleBox.applyStyles({
@@ -942,7 +936,12 @@
         });
         break;
       }
+
+      axis = [ "+y", "-x", "+x", "-y" ];
     }
+
+    var bestPosition = findBestPosition(boxPosition, axis);
+    styleBox.move(bestPosition.toCSSCompatValues(containerBox));
   }
 
   function WebVTTParser(window, decoder) {
