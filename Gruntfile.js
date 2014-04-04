@@ -88,10 +88,16 @@ module.exports = function( grunt ) {
   grunt.registerTask( "default", [ "jshint", "build" ]);
 
   grunt.registerTask( "stage-dist", "Stage dist files.", function() {
-    exec( "git add dist/*", this.async() );
+    exec( "git update-index --no-assume-unchanged dist/*", function() {
+      exec( "git add dist/*", this.async() );
+    });
+  });
+
+  grunt.registerTask( "ignore-dist", "Set dist files to be assumed to not be changed.", function() {
+    exec( "git update-index --assume-unchanged dist/*", this.async() );
   });
 
   grunt.registerTask( "release", "Build the distributables and bump the version.", function(arg) {
-    grunt.task.run( "build", "stage-dist", "bump:" + arg );
+    grunt.task.run( "build", "stage-dist", "bump:" + arg, "ignore-dist" );
   });
 };
